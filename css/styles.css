@@ -1,0 +1,105 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+@import url(http://fonts.googleapis.com/css?family=Alegreya:400,400italic,700);
+
+
+/*** GLOBAL ***/
+body {
+	font-family: 'Alegreya', sans-serif;
+	margin: 0;
+	background-image: url('lined_paper.png');
+	color: #444;
+}
+
+
+/*** HEADER ***/
+header {
+	font-family: 'Raleway', serif;
+	background-color: #FFF;
+	border-bottom: 1px solid #CCC;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding-bottom: 5px;
+/*	background-image: url('stad-crop.png');
+	background-repeat: no-repeat;
+	background-size: 800px;*/
+}
+
+.header-title {
+	padding: 10px 10px 0 10px;
+	font-weight: normal;
+}
+
+.header-sub {
+	font-size: 12pt;
+	font-style: italic;
+	font-weight: normal;
+}
+
+
+/*** MAIN ***/
+.post, .footer-content, .header-title, .header-sub {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.post {
+	background-color: rgba(255, 255, 255, .7);
+	border: 1px solid #CCC;
+	box-shadow: 2px 2px #EEE;
+	margin-top: 50px;
+	padding: 10px;
+	max-width: 800px;
+}
+
+.first-post {
+	margin-top: 100px;
+}
+
+.post-title {
+	display: inline-block;
+	font-weight: bold;
+	font-family: 'Roboto Slab', sans-serif;	
+}
+
+.post-date {
+	display: inline-block;
+	font-size: 10pt;
+	float: right;
+	font-family: 'Roboto Slab', sans-serif;
+
+}
+
+.post-underline {
+	width: 100%;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #CCC;
+}
+
+.post-spacer {
+	height: 10px;
+}
+
+
+/*** FOOTER ***/
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #FFF;
+	border-top: 1px solid #CCC;
+	padding: 5px 0;
+}
+
+.footer-clear {
+	margin-bottom: 60px;
+}
+
+
+/*** MEDIA QUERIES ***/
+@media(min-width: 800px) {
+	.post {
+		margin-left: 10%;
+	}
+}
