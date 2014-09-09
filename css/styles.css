@@ -13,33 +13,43 @@ body {
 
 
 /*** HEADER ***/
-header {
-	font-family: 'Raleway', serif;
-	background-color: #FFF;
+.cover {
+	display: inline-block;
+	position: relative;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
 	border-bottom: 1px solid #CCC;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	padding-bottom: 5px;
-/*	background-image: url('stad-crop.png');
-	background-repeat: no-repeat;
-	background-size: 800px;*/
+	box-shadow: 2px 2px #E6E6E6;
+}
+
+.cover-img {
+	width: 820px;
+	display: block;
+	margin: 0 auto;
+}
+
+.header-title, .header-sub {
+	font-family: 'Raleway', serif;
+	position: absolute;
 }
 
 .header-title {
-	padding: 10px 10px 0 10px;
 	font-weight: normal;
+	left: 20px;
+	top: 20px;
 }
 
 .header-sub {
 	font-size: 12pt;
 	font-style: italic;
 	font-weight: normal;
+	left: 240px;
+	top: 36px;
 }
 
 
 /*** MAIN ***/
-.post, .footer-content, .header-title, .header-sub {
+.post, .header-title, .header-sub {
 	width: 80%;
 	margin: 0 auto;
 }
@@ -47,10 +57,10 @@ header {
 .post {
 	background-color: rgba(255, 255, 255, .7);
 	border: 1px solid #CCC;
-	box-shadow: 2px 2px #EEE;
+	box-shadow: 2px 2px #E6E6E6;
 	margin-top: 50px;
 	padding: 10px;
-	max-width: 800px;
+	width: 800px;
 }
 
 .first-post {
@@ -68,7 +78,6 @@ header {
 	font-size: 10pt;
 	float: right;
 	font-family: 'Roboto Slab', sans-serif;
-
 }
 
 .post-underline {
@@ -81,25 +90,26 @@ header {
 	height: 10px;
 }
 
-
-/*** FOOTER ***/
-footer {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	background-color: #FFF;
-	border-top: 1px solid #CCC;
-	padding: 5px 0;
+.post-img {
+	width: 600px;
+	display: block;
+	margin: 10px auto;
 }
 
+.post-img[alt="logo"] {
+	width: 240px;
+}
+
+
+/*** FOOTER ***/
 .footer-clear {
 	margin-bottom: 60px;
 }
 
 
 /*** MEDIA QUERIES ***/
-@media(min-width: 800px) {
+/*@media(min-width: 800px) {
 	.post {
 		margin-left: 10%;
 	}
-}
+}*/
