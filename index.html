@@ -303,10 +303,20 @@ We transferred once and got off at ZhongGuanCun at about 10pm. It took us about 
 
 <script type="text/javascript">
 $(function() {
-	// $('.post').first().addClass('first-post');
+	resizeCover();
 
-	var browWid = $('body').width();
-	var coverWid = $('.cover').width();
-	$('.cover').css('margin-left', ((browWid - coverWid) / 2));
+	$(window).resize(function() {
+		resizeCover();
+	});
+
+	function resizeCover() {
+		var browWid = $('body').width();
+		var coverWid = $('.cover').width();
+		coverWid = Math.min(coverWid, 820);
+		var diff = ((browWid - coverWid) / 2);
+		if (diff > 0) {
+			$('.cover').css('margin-left', diff);
+		}
+	}
 });
 </script>
